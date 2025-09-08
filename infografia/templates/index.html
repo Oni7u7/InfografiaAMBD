@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Responsive</title>
+  <link rel="stylesheet" href="/infografia/estilo/style.css">
+</head>
+
+<body>
+  <div class="slider-container">
+    <div class="slider">
+      <!-- Slide 1 -->
+      <div class="slide" style="background-image: url('/infografia/imagenes/imagen.png');">
+        <div class="slide-content">
+          <h2>Computación Móvil</h2>
+          <p>La Computación Móvil es un término utilizado para describir el uso de computadoras sin la necesidad de
+            estar conectadas a una red, ya sea por radio, satélite. También se puede definir como la serie de artefactos
+            y equipos portátiles, hardware, que hacen uso de la computación para lograr un buen funcionamiento.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide" style="background-image: url('/infografia/imagenes/imagen(1).png');">
+        <div class="slide-content">
+          <h2>Caracteristicas</h2>
+          <p>La tecnología móvil posee dos características principales que la hacen diferente a otras formas: movilidad y el amplio alcance.</p>
+          <ul>
+            <li>Movilidad</li>
+            <li>Implica la portabilidad basada en el hecho de que los usuarios llevan un Dispositivo móvil a todas las partes a donde se dirigen.</li>
+            <li>Por lo tanto, los usuarios pueden iniciar el contacto en tiempo real con otros sistemas donde quieran que se encuentren.</li>
+            <li>Amplio alcance</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" style="background-image: url('/infografia/imagenes/imagen(2).png');">
+        <div class="slide-content">
+          <h2>Sistemas Operativos Moviles</h2>
+          <ul>
+            <li>Android</li>
+            <li>iOS</li>
+            <li>Windows Phone</li>
+            <li>Blackberry</li>
+            <li>Symbian</li>
+            <li>WebOS</li>
+            <li>Firefox OS</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide" style="background-image: url('/infografia/imagenes/imagen(3).png');">
+        <div class="slide-content">
+          <h2>Plataformas de Desarrollo</h2>
+          <ul>
+            <li>React Native: JavaScript</li>
+            <li>Flutter: Dart</li>
+            <li>Xamarin: C#</li>
+            <li>Ionic: HTML, CSS, JavaScript</li>
+            <li>PhoneGap: HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+    <!-- Indicadores -->
+    <div class="indicators">
+      <span class="indicator active" onclick="currentSlide(1)"></span>
+      <span class="indicator" onclick="currentSlide(2)"></span>
+      <span class="indicator" onclick="currentSlide(3)"></span>
+      <span class="indicator" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+  <script src="/infografia/js/script.js"></script>
+</body>
+
+</html>
